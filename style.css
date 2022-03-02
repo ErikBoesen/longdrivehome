@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+.logo {
+    position: absolute;
+    width: 64px;
+    height: 36px;
+    left: 41px;
+    top: 41px;
+}
+.logo .rectangle1 {
+    position: absolute;
+    width: 25.8px;
+    height: 25.13px;
+    left: 81px;
+    top: 41px;
+
+    border: 3px solid #FF0000;
+    box-sizing: border-box;
+    transform: rotate(44.16deg);
+}
+
+.logo .rectangle2 {
+    position: absolute;
+    width: 64px;
+    height: 30.12px;
+    left: 41px;
+    top: 44px;
+
+    border: 3px solid #FF0000;
+    box-sizing: border-box;
+    border-radius: 49.5px;
+}
+
+.logo .ellipse {
+    position: absolute;
+    width: 12.91px;
+    height: 12.37px;
+    left: 75.19px;
+    top: 52.95px;
+
+    border: 3px solid #FF0000;
+    box-sizing: border-box;
+}
+
+nav {
+    display: inline;
+    position: relative;
+    right: 10px;
+    z-index: 100;
+}
+nav ul,
+nav li {
+    position: relative;
+}
+nav ul {
+    list-style: none;
+}
+nav > ul {
+    margin-left: auto;
+}
+nav li > * {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 12px 15px;
+}
+nav span {
+    color: #ccc;
+}
+nav li {
+    float: left;
+    padding: 0;
+}
+nav li:hover {
+    background: #444;
+}
+nav .active {
+    background: #222;
+}
+nav .active:hover {
+    background: #222;
+}
+nav .active a {
+    color: #ddd;
+    cursor: default;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #2c2c2c;
+    padding: 0;
+}
+nav ul ul li {
+    width: 100%;
+}
+nav ul li:hover > ul {
+    display: block;
+    min-width: 100%;
+}
+nav > ul > li:last-child ul {
+    margin-left: -40px;
+}
+
+main {
+
+}
+
+section {
+    background: url(images/landing.png);
+    background-size: cover;
+}
+
+section.jumbotron {
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
