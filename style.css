@@ -96,13 +96,16 @@ h2 {
 
 section.white {
     height: 100vh;
-    background: white;
+    background: #f6f5ff;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
 }
 .column {
     width: 60%;
+}
+section.white img {
+    margin-right: -60%;
 }
 .column.text {
     padding-top: 300px;
