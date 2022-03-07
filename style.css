@@ -14,14 +14,13 @@ body {
 }
 
 header {
-    position: fixed;
     padding: 20px 30px;
     margin: 20px 15px;
     display: flex;
     justify-content: space-between;
     width: calc(100% - 30px);
     z-index: 10;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     color: #D4FF00;
     border-radius: 40px;
@@ -83,22 +82,18 @@ section {
 }
 
 .jumbotron {
+    position: absolute;
+    top: 0;
     height: 105vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 100%;
     color: white;
     margin-bottom: -5vh;
     padding: 0;
+    z-index: -5;
 }
 .jumbotron .background {
     width: 100%;
     height: 105vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -116,11 +111,37 @@ section {
 }
 
 section.landing {
-    max-height: 80vh;
+    height: 87vh;
     padding: 20px 30px;
     margin: 20px 15px;
     border-radius: 40px;
     border: solid 2px #D4FF00;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchbar {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: solid 1px white;
+    color: white;
+    margin-bottom: 8px;
+}
+.searchbar img, .searchbar p {
+    display: inline-block;
+}
+.searchbar img {
+    width: 30px;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.searchbar p {
+    margin-top: 13px;
+    vertical-align: top;
+    margin-right: 10px;
 }
 
 section.white {
@@ -145,6 +166,17 @@ h3 {
     margin-bottom: 5px;
 }
 
-.button {
+.button, button {
+    background: #D4FF00;
+    color: black;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 14px;
+    font-weight: bold;
+    font-size: 18px;
+}
 
+.placeholder {
+    width: 100%;
+    margin-bottom: -4px;
 }
